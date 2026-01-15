@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-(--background-color-dynamic) text-(--body-color-dynamic)">
+    <div className="min-h-screen bg-white text-black dark:bg-black dark:text-white">
       <main className="mx-auto max-w-6xl px-6 py-16">
         {/* Hero Section */}
         <section className="mb-24">
