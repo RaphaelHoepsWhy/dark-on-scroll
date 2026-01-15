@@ -1,4 +1,4 @@
-import { MotionValue, useTransform } from "motion/react"
+import { MotionValue, useMotionValueEvent, useTransform } from "motion/react"
 import { useContext, useLayoutEffect } from "react"
 import { DynamicColorsContext } from "./DynamicColorsProvider"
 
@@ -17,6 +17,10 @@ export default function useDynamicColor({
 }: Input) {
   const { addColor, colors } = useContext(DynamicColorsContext)
   const color = useTransform(percentage, [0, 1], [start, end])
+
+  useMotionValueEvent(color, "change", (latest) => {
+    console.log(cssVariableName, latest)
+  })
 
   useLayoutEffect(() => {
     if (colors[cssVariableName]) {
