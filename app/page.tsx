@@ -11,7 +11,7 @@ export default function Home() {
           {/* Hero Section */}
           <section className="mb-24">
             <h1 className="mb-6 text-5xl font-bold tracking-tight md:text-7xl">
-              Continously Change Colors on Scroll
+              Continous Color Change
             </h1>
             <p className="max-w-2xl text-xl leading-relaxed opacity-80">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
