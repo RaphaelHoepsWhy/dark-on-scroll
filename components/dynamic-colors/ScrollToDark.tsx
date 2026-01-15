@@ -46,8 +46,8 @@ export default function ScrollToDark({
   })
   useDynamicColor({
     cssVariableName: "--color-card-dynamic",
-    start: "#f9a8d4",
-    end: "#4b5563",
+    start: "#7e22ce",
+    end: "#334155",
     percentage: darkPercentage,
   })
 
