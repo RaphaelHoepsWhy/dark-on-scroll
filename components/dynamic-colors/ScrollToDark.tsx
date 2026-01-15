@@ -43,26 +43,20 @@ export default function ScrollToDark({
 
   useDynamicColor({
     cssVariableName: "--background-color-dynamic",
-    start: "var(--color-slate-200)",
-    end: "var(--color-slate-900)",
+    start: "var(--color-white)",
+    end: "var(--color-neutral-950)",
     percentage: darkPercentage,
   })
   useDynamicColor({
     cssVariableName: "--body-color-dynamic",
-    start: "var(--color-slate-900)",
-    end: "var(--color-slate-100)",
+    start: "var(--color-neutral-900)",
+    end: "var(--color-neutral-200)",
     percentage: darkPercentage,
   })
   useDynamicColor({
-    cssVariableName: "--background-color-card-dynamic",
-    start: "var(--color-white",
-    end: "var(--color-slate-200)",
-    percentage: darkPercentage,
-  })
-  useDynamicColor({
-    cssVariableName: "--border-color-card-dynamic",
-    start: "var(--color-gray-100)",
-    end: "var(--color-slate-100)",
+    cssVariableName: "--color-card-dynamic",
+    start: "var(--color-pink-300)",
+    end: "var(--color-neutral-700)",
     percentage: darkPercentage,
   })
 
