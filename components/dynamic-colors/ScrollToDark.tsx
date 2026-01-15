@@ -7,15 +7,6 @@ import useDynamicColor from "@/components/dynamic-colors/useDynamicColor"
 
 // Use this:
 // https://tailwindcss.com/docs/theme#referencing-in-javascript
-// Ex: <motion.div animate={{ backgroundColor: "var(--color-blue-500)" }} />
-
-// const LIGHT_BACKGROUND = fullConfig.theme.colors.white
-// const DEEP_BLUE = fullConfig.theme.colors.blue[800]
-// const MIDNIGHT_BLUE = fullConfig.theme.colors.blue[900]
-// const WHITE = fullConfig.theme.colors.white
-// const BLUE_200 = fullConfig.theme.colors.blue[200]
-// const BLUE_100 = fullConfig.theme.colors.blue[100]
-// const GRAY_100 = fullConfig.theme.colors.gray[100]
 
 type ScrollToDarkProps = {
   children?: ReactNode
@@ -43,20 +34,20 @@ export default function ScrollToDark({
 
   useDynamicColor({
     cssVariableName: "--background-color-dynamic",
-    start: "var(--color-white)",
-    end: "var(--color-neutral-950)",
+    start: "#fff",
+    end: "#0a0a0a",
     percentage: darkPercentage,
   })
   useDynamicColor({
     cssVariableName: "--body-color-dynamic",
-    start: "var(--color-neutral-900)",
-    end: "var(--color-neutral-200)",
+    start: "#171717",
+    end: "#ededed",
     percentage: darkPercentage,
   })
   useDynamicColor({
     cssVariableName: "--color-card-dynamic",
-    start: "var(--color-pink-300)",
-    end: "var(--color-slate-700)",
+    start: "#f9a8d4",
+    end: "#4b5563",
     percentage: darkPercentage,
   })
 
