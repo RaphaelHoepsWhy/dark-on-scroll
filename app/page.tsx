@@ -1,6 +1,7 @@
-import { Card } from "@/components/Card"
+import { DynamicCard } from "@/components/dynamic-colors/DynamicCard"
 import DynamicColorsProvider from "@/components/dynamic-colors/DynamicColorsProvider"
 import ScrollToDark from "@/components/dynamic-colors/ScrollToDark"
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -10,13 +11,16 @@ export default function Home() {
           {/* Hero Section */}
           <section className="mb-24">
             <h1 className="mb-6 text-5xl font-bold tracking-tight md:text-7xl">
-              Lorem Ipsum Dolor Sit
+              Continously Change Colors on Scroll
             </h1>
             <p className="max-w-2xl text-xl leading-relaxed opacity-80">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris.
             </p>
+            <Link href="./trigger">
+              Alternative Approach with instant change
+            </Link>
           </section>
 
           {/* About Section */}
@@ -55,33 +59,33 @@ export default function Home() {
             </div>
           </section>
 
-          {/* Cards Section */}
+          {/* DynamicCards Section */}
           <section className="mb-24">
             <h2 className="mb-8 text-3xl font-semibold md:text-4xl">
               Tempor Incididunt
             </h2>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              <Card
+              <DynamicCard
                 title="Dolor Amet"
                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum."
               />
-              <Card
+              <DynamicCard
                 title="Vestibulum"
                 description="Cras ultricies ligula sed magna dictum porta. Curabitur aliquet quam id dui posuere blandit."
               />
-              <Card
+              <DynamicCard
                 title="Pellentesque"
                 description="Pellentesque in ipsum id orci porta dapibus. Donec sollicitudin molestie malesuada."
               />
-              <Card
+              <DynamicCard
                 title="Curabitur"
                 description="Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
               />
-              <Card
+              <DynamicCard
                 title="Praesent"
                 description="Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla quis lorem ut libero malesuada."
               />
-              <Card
+              <DynamicCard
                 title="Convallis"
                 description="Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur arcu erat."
               />
@@ -116,25 +120,25 @@ export default function Home() {
               </p>
             </section>
 
-            {/* More Cards */}
+            {/* More DynamicCards */}
             <section className="mb-24">
               <h2 className="mb-8 text-3xl font-semibold md:text-4xl">
                 Nulla Facilisi Morbi
               </h2>
               <div className="grid gap-6 sm:grid-cols-2">
-                <Card
+                <DynamicCard
                   title="Faucibus Turpis"
                   description="Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet non curabitur gravida arcu ac tortor."
                 />
-                <Card
+                <DynamicCard
                   title="Amet Nisl Suscipit"
                   description="Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor elit sed vulputate mi sit."
                 />
-                <Card
+                <DynamicCard
                   title="Elementum Sagittis"
                   description="Elementum sagittis vitae et leo duis ut diam quam nulla porttitor massa id neque aliquam vestibulum."
                 />
-                <Card
+                <DynamicCard
                   title="Turpis Egestas"
                   description="Turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros in."
                 />
@@ -180,21 +184,21 @@ export default function Home() {
               </div>
             </section>
 
-            {/* Final Cards Grid */}
+            {/* Final DynamicCards Grid */}
             <section className="mb-24">
               <h2 className="mb-8 text-3xl font-semibold md:text-4xl">
                 Viverra Justo Nec
               </h2>
               <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                <Card
+                <DynamicCard
                   title="Aliquet Porttitor"
                   description="Aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat semper viverra nam libero."
                 />
-                <Card
+                <DynamicCard
                   title="Risus Quis"
                   description="Risus quis varius quam quisque id diam vel quam elementum pulvinar etiam non quam lacus."
                 />
-                <Card
+                <DynamicCard
                   title="Gravida Dictum"
                   description="Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus."
                 />
